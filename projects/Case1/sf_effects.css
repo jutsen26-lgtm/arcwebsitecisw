@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* Love at First Bite | decorative effects */
+.recipe-card,.vertical,.review { transition: box-shadow .2s ease,transform .2s ease; }
+.review:hover,.vertical:hover { box-shadow: 0 8px 24px #182f6220; transform: translateY(-2px); }
+.tabs a { transition: background-color .2s,color .2s; }
+.recipe-card h2::after {
+  content: " ";
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: #b87e60;
+  margin-top: 13px;
+  border-radius: 3px;
+}
+@media (prefers-reduced-motion:reduce) {
+  * { transition: none !important; }
+}
